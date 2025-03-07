@@ -1,0 +1,12 @@
+ // Send POST request to API, get response
+        
+
+
+        fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
+                console.log(data);
+        }).catch((error) => {
+                console.log(error);
+        })
+
+        .finally(()=>chatbox.scrollTo(0, chatbox.scrollHeight));
+        chatbox.scrollTo(0, chatbox.scrollHeight);
